@@ -1,9 +1,10 @@
 .btn-container {
   display: flex;
   justify-content: end;
+  gap: 1rem;
 }
 
-.btn-container button {
+.btn-container .btn-criar {
   padding: 12px 24px;
   border-radius: 5px;
   border: 0;
@@ -11,4 +12,32 @@
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.btn-container button:hover {
+  background-color: #4055cb;
+  transition: 0.5s ease-in;
+}
+
+.btn-clear {
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: 1px solid #6278f7;
+  color: #6278f7;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.btn-clear:hover {
+  background-color: #4055cb;
+  color: #fff;
+  transition: 0.5s ease-in;
+}
+
+.btn-container i {
+  font-size: 1rem;
 }

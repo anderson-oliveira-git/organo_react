@@ -1,5 +1,6 @@
 import './App.css';
 import Banner from "./components/Banner";
+import Card from './components/Card';
 import Form from './components/Form';
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       />
 
       <Form/>
+
+      {/* <Card/> */}
     </div>
   );
 }

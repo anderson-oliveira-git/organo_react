@@ -7,6 +7,7 @@
   margin-bottom: 0.3rem;
   font-size: 0.9rem;
   font-weight: bold;
+  opacity: 0.7;
 }
 
 .input-text input {
@@ -17,4 +18,8 @@
   border: none;
   padding: 12px;
   border-radius: 4px;
+}
+
+.input-text input:focus {
+  outline-color: #6278f7;
 }
