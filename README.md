@@ -1,4 +1,5 @@
-![my_banner](https://github.com/anderson-oliveira-git/organo_react/assets/6682086/3329840d-6bbb-4a3f-a879-09a099850f77)
+![my_banner](https://github.com/anderson-oliveira-git/organo_react/assets/6682086/466e586e-f1c9-491e-bca3-56defa451270)
+
 
 
 # Getting Started with Create React App
