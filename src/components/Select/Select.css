@@ -1,0 +1,20 @@
+.field-select {
+  margin-bottom: 1rem;
+}
+
+.field-select label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.field-select select {
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  font-size: 0.9rem;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+}
