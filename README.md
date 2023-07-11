@@ -1,3 +1,6 @@
+![my_banner](https://github.com/anderson-oliveira-git/organo_react/assets/6682086/3329840d-6bbb-4a3f-a879-09a099850f77)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
