@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 import InputText from '../InputText';
-import { Select } from '../Select/Select';
 import './Form.css';
+import Select from '../Select';
 
 export const Form = props => {
   const [nome, setNome] = useState('');
@@ -22,7 +22,12 @@ export const Form = props => {
 
   const saveForm = (event) => {
     event.preventDefault();
-    console.log('Dados do form: ', nome, cargo, imagem, time);
+    props.colaboradorCadastro({
+      nome, 
+      cargo, 
+      imagem, 
+      time
+    });
   }
 
   function limparCampos () {
@@ -53,13 +58,14 @@ export const Form = props => {
           value={imagem} 
           required={true} 
           label="Imagem" 
-          placeholder="Digite o caminho"
+          placeholder="https://github.com/<seu_usuário>.png"
           formValue={value => setImagem(value)}
         />
-        <Select 
+
+        <Select
           value={time}
           label="Time" 
-          itens={times}
+          itens={props.times}
           default="Selecione o cargo"
           name="cargo"
           id="cargo"

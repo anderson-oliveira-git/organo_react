@@ -1,0 +1,12 @@
+.time-container {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.colaboradores {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 40px;
+}
