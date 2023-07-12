@@ -1,6 +1,6 @@
 .card-container {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -27,4 +27,9 @@
 
 .card-infos span h4 {
   color: #4055cb;
+  font-weight: lighter;
+}
+
+.card-infos span h5 {
+  opacity: 0.8;
 }

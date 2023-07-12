@@ -3,10 +3,12 @@ import './App.css';
 import Banner from "./components/Banner";
 import Form from './components/Form';
 import { Time } from './components/Time/Time';
+import Footer from './components/Footer';
+import { Title } from './components/Title/Title';
 
 function App() {
 
-  const [time, setTime] = useState([]);
+  const [colaborador, setColaborador] = useState([]);
 
   const times = [
     {
@@ -37,7 +39,7 @@ function App() {
     {
       nome: 'Mobile',
       corPrimaria: '#fff5d9',
-      corSecundaria: '#ff8405'
+      corSecundaria: '#ffba05'
     },
     {
       nome: 'Inovação e gestão',
@@ -46,8 +48,12 @@ function App() {
     }
   ];
 
-  const adicionarColaborador = (colaborador) => {
-    setTime([...time, colaborador]);
+  const adicionarColaborador = (novoColaborador) => {
+    setColaborador(prevTime => {
+      const novosColaboradores = [...prevTime];
+      novosColaboradores.push(novoColaborador);
+      return novosColaboradores;
+    });
   }
 
   return (
@@ -61,7 +67,12 @@ function App() {
         postas demonstrando ser um time."
       />
 
-      <Form times={times.map(time => time.nome)} colaboradorCadastro={colaborador => adicionarColaborador(colaborador)}/>
+      <Form 
+        times={times.map(time => time.nome)} 
+        colaboradorCadastro={colaborador => adicionarColaborador(colaborador)}
+      />
+
+      <Title title="Minha Organização"/>
 
       {times.map(time => {
         return (
@@ -70,9 +81,17 @@ function App() {
             title={time.nome}
             corPrimaria={time.corPrimaria}
             corSecundaria={time.corSecundaria}
+            colaboradores={colaborador}
           />
         );
       })}
+
+      <Footer 
+        github="https://github.com/anderson-oliveira-git"
+        linkedin="https://www.linkedin.com/in/anderson-oliveira-dev/"
+        logo="/images/logo.png"
+        text="Projeto prático Alura | by Anderson Oliveira"
+      />
     </div>
   );
 }

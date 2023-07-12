@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 import InputText from '../InputText';
-import './Form.css';
 import Select from '../Select';
+import './Form.css';
 
 export const Form = props => {
   const [nome, setNome] = useState('');
@@ -10,17 +10,7 @@ export const Form = props => {
   const [imagem, setImagem] = useState('');
   const [time, setTime] = useState('');
 
-  const times = [
-    'Programação',
-    'Front-end',
-    'Data Science',
-    'Devops',
-    'UX e Design',
-    'Mobile',
-    'Inovação e gestão'
-  ];
-
-  const saveForm = (event) => {
+  const saveForm = event => {
     event.preventDefault();
     props.colaboradorCadastro({
       nome, 

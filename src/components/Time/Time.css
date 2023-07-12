@@ -6,7 +6,19 @@
 
 .colaboradores {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
   margin-top: 40px;
+}
+
+.time-container h2::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #6278f7;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
 }
