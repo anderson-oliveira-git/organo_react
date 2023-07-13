@@ -81,7 +81,7 @@ function App() {
             title={time.nome}
             corPrimaria={time.corPrimaria}
             corSecundaria={time.corSecundaria}
-            colaboradores={colaborador}
+            colaboradores={colaborador.filter(colaborador => colaborador.time === time.nome)}
           />
         );
       })}
@@ -90,7 +90,7 @@ function App() {
         github="https://github.com/anderson-oliveira-git"
         linkedin="https://www.linkedin.com/in/anderson-oliveira-dev/"
         logo="/images/logo.png"
-        text="Projeto prático Alura | by Anderson Oliveira"
+        text="Projeto prático Alura | Anderson Oliveira"
       />
     </div>
   );

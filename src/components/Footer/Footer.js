@@ -19,7 +19,7 @@ export const Footer = props => {
 
       <div className='text'>
         {props.text}
-      </div>
+      </div> 
     </footer>
   );
 }

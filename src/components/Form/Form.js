@@ -5,19 +5,18 @@ import Select from '../Select';
 import './Form.css';
 
 export const Form = props => {
-  const [nome, setNome] = useState('');
-  const [cargo, setCargo] = useState('');
+  const [nome, setNome]     = useState('');
+  const [cargo, setCargo]   = useState('');
   const [imagem, setImagem] = useState('');
-  const [time, setTime] = useState('');
+  const [time, setTime]     = useState('');
 
   const saveForm = event => {
     event.preventDefault();
     props.colaboradorCadastro({
-      nome, 
-      cargo, 
-      imagem, 
-      time
+      nome, cargo, imagem, time
     });
+
+    limparCampos();
   }
 
   function limparCampos () {
@@ -48,7 +47,7 @@ export const Form = props => {
           value={imagem} 
           required={true} 
           label="Imagem" 
-          placeholder="https://github.com/<seu_usuário>.png"
+          placeholder="Nome do usuário github"
           formValue={value => setImagem(value)}
         />
 
